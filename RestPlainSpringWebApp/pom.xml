@@ -15,6 +15,9 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <springframework.version>4.3.0.RELEASE</springframework.version>
+        <jackson.library>2.7.5</jackson.library>
+        <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
     </properties>
 
     <dependencies>
@@ -27,7 +30,34 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <version>${javax.servlet-api.version}</version>
+        </dependency>
+        <!--this is the core module of the Spring framework, it should be used in any spring-based application.-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!--these are the web modules which allow you to create either REST resources or standard controllers.-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!--these are the web modules which allow you to create either REST resources or standard controllers.-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!--this library provides implicit conversion between JSON and POJO classes, when this library
+         is imported in pom.xml, you don’t have to worry about converting JSON requests into POJO or
+         POJO responses into JSON, this is fully handled implicitly by this library. In case you’re
+         interested in XML rest type, then use jackson-xml-databind.-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.library}</version>
         </dependency>
     </dependencies>
 
