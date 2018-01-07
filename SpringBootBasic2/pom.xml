@@ -18,7 +18,7 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <spring-boot-version>1.4.0.RELEASE</spring-boot-version>
-    <start-class>hello.Application</start-class>
+    <start-class>main.Application</start-class>
   </properties>
 
   <dependencies>
