@@ -9,3 +9,15 @@ And
 Building a RESTful Web Service with Spring Boot Actuator
 
 https://spring.io/guides/gs/actuator-service/
+
+Better than, but the same functionality
+
+Building a RESTful Web Service  
+
+https://spring.io/guides/gs/rest-service/
+
+Extra:
+
+Understanding REST:
+
+https://spring.io/understanding/REST
