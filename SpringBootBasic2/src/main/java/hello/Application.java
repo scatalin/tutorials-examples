@@ -3,15 +3,27 @@ package hello;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
  * Notice how we’re using @SpringBootApplication as our primary application configuration class; behind the scenes, that’s equivalent to @Configuration, @EnableAutoConfiguration, and @ComponentScan together.
  *
+ * Note that we’re using:
+ * #@EnableJpaRepositories to scan the specified package for repositories
+ * #@EntityScan to pick up our JPA entities
+ *
+ * To keep things simple, we’re using an H2 in-memory database here – so that we don’t have any external dependencies when we run the project.
+ *
+ * Once we include H2 dependency, Spring Boot auto-detects it and sets up our persistence with no need for extra configuration, other than the data source properties:
+ *
  * @author cstan
  * @since 07.01.2018
  */
+@EnableJpaRepositories("persistence.repository")
+@EntityScan("persistence.model")
 @SpringBootApplication
 public class Application {
 
