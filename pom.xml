@@ -13,6 +13,7 @@
         <module>RestPlainSpringWebApp</module>
         <module>RestEasyTutorial</module>
         <module>SpringBootBasic</module>
+        <module>SpringBootBasic2</module>
     </modules>
 
 </project>
