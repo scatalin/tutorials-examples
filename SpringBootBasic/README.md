@@ -21,3 +21,7 @@ Extra:
 Understanding REST:
 
 https://spring.io/understanding/REST
+
+Spring Boot Dependency Management with a Custom Parent
+
+http://www.baeldung.com/spring-boot-dependency-management-custom-parent
