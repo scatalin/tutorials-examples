@@ -1,7 +1,5 @@
-package main;
+package controller.exceptions;
 
-import controller.exceptions.BookIdMismatchException;
-import controller.exceptions.BookNotFoundException;
 import javax.validation.ConstraintViolationException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpHeaders;

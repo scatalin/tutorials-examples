@@ -25,7 +25,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  */
 @EnableJpaRepositories("persistence.repository")
 @EntityScan("persistence.model")
-@ComponentScan(basePackages = { "controller"})
+@ComponentScan(basePackages = {"controller", "main"})
 @SpringBootApplication
 public class Application {
 
