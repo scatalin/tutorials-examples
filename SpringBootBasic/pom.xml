@@ -126,6 +126,8 @@
             <manifest>
               <mainClass>${start-class}</mainClass>
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
             </manifest>
           </archive>
         </configuration>
