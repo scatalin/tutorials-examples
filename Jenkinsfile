@@ -1,14 +1,13 @@
 
 pipeline {
-    agent any
+    agent {
+      docker {
+        image 'maven:3-alpine'
+        args '-v /root/.m2:/root/.m2'
+      }
+    }
     stages {
         stage("Build") {
-            agent {
-                docker {
-                reuseNode true
-                image 'maven:3.5.0-jdk-8'
-                }
-            }
             steps {
                 sh 'mvn clean install'
             }
