@@ -14,7 +14,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <resteasy-servlet-initializer.version>3.1.4.Final</resteasy-servlet-initializer.version>
+        <resteasy-servlet-initializer.version>3.15.6.Final</resteasy-servlet-initializer.version>
     </properties>
 
     <repositories>
